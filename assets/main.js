@@ -1,6 +1,6 @@
 
   function roundDownToNearest100(number) {
-    return Math.floor(number / 100) * 100;
+    return Math.floor(number / 50) * 50;
 }
 
 // Initial letters array
@@ -46,8 +46,8 @@ function updateBackgroundBoxes() {
     var viewportWidth = window.innerWidth;
     var viewportHeight = window.innerHeight;
 
-    let yBoxes = roundDownToNearest100(viewportWidth - 50) / 100;
-    let xBoxes = roundDownToNearest100(viewportHeight - 50) / 100;
+    let yBoxes = roundDownToNearest100(viewportWidth - 50) / 50;
+    let xBoxes = roundDownToNearest100(viewportHeight - 50) / 50;
     let boxNumber = yBoxes * xBoxes;
 
     // Increment the letters in the sequence
